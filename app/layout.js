@@ -1,26 +1,27 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Bread & Law',
-  description: 'Earned-First Public Relations',
-  robots: 'noindex, nofollow',
+  title: 'Bread & Law: Earned-First PR',
+  description: 'Brooklyn-based earned-first public relations. We measure what matters: open rates, response rates, and real access to media.',
   openGraph: {
-    title: 'Bread & Law',
-    description: 'Earned-First Public Relations',
+    title: 'Bread & Law: Earned-First PR',
+    description: 'Brooklyn-based earned-first public relations. We measure what matters: open rates, response rates, and real access to media.',
+    url: 'https://www.breadandlaw.com',
+    siteName: 'Bread & Law',
+    locale: 'en_US',
     type: 'website',
-    images: [],
   },
   twitter: {
     card: 'summary',
-    title: 'Bread & Law',
-    description: 'Earned-First Public Relations',
+    title: 'Bread & Law: Earned-First PR',
+    description: 'Brooklyn-based earned-first public relations. We measure what matters: open rates, response rates, and real access to media.',
   },
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-black">{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
