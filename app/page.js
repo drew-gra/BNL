@@ -160,6 +160,16 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
+  // Check URL hash on page load and open the corresponding accordion
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash === '#approach') {
+      setApproachOpen(true);
+    } else if (hash === '#results') {
+      setResultsOpen(true);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-black flex justify-center pt-24 pb-24 relative">
       <div className="text-center">
