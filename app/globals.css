@@ -1,0 +1,9 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@200,400,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Satoshi', sans-serif;
+}
