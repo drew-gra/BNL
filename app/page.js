@@ -85,7 +85,7 @@ function ResultsContent() {
   return (
     <div className="pt-6 pb-2">
       <p className="text-base font-extralight text-gray-400 leading-relaxed text-center max-w-md mx-auto mb-12">
-        Currently, my communication to media gets opened <span className="text-white">{openComparison.text} {openComparison.direction}</span> frequently and it instigates a response <span className="text-white">{responseComparison.text} {responseComparison.direction}</span> frequently when compared against my peers.
+        Currently, my communication to media gets opened <span className="text-white">{openComparison.text} {openComparison.direction}</span> frequently and it instigates a response <span className="text-white">{responseComparison.text} {responseComparison.direction}</span> frequently when compared against my peers. <a href="#results" className="text-gray-600 hover:text-gray-400 transition-colors">#</a>
       </p>
       
       <div className="flex flex-col gap-12 mb-12">
@@ -192,7 +192,7 @@ export default function Home() {
         
         <div className="mt-12 space-y-6">
           {/* Approach */}
-          <div>
+          <div id="approach">
             <button
               onClick={() => setApproachOpen(!approachOpen)}
               className="text-base font-extralight text-gray-300 tracking-[0.2em] uppercase hover:text-gray-100 transition-colors relative mx-auto"
@@ -203,7 +203,7 @@ export default function Home() {
             
             <div className={`overflow-hidden transition-all duration-500 ease-in-out ${approachOpen ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
               <div className="text-base font-extralight text-gray-400 tracking-wide max-w-md mx-auto">
-                <p className="mb-4">I'm a Brooklyn-based comms consultant and spox, currently representing cannabis and AI interests.</p>
+                <p className="mb-4">I'm a Brooklyn-based comms consultant and spox, currently representing cannabis and AI interests. <a href="#approach" className="text-gray-600 hover:text-gray-400 transition-colors">#</a></p>
                 <a 
                   href="mailto:newbiz@breadandlaw.com" 
                   className="text-gray-400 hover:text-gray-100 transition-colors"
@@ -215,7 +215,7 @@ export default function Home() {
           </div>
 
           {/* Results */}
-          <div>
+          <div id="results">
             <button
               onClick={() => setResultsOpen(!resultsOpen)}
               className="text-base font-extralight text-gray-300 tracking-[0.2em] uppercase hover:text-gray-100 transition-colors relative mx-auto"
